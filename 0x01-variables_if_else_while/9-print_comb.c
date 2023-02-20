@@ -1,30 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Prints all the numbers of base 16 in lowercase, followed by a new line
+ * main - Entry point
+ *
+ * Description: Prints all possible combinations of single-digit numbers.
+ * Numbers must be separated by ',', followed by a space.
+ * Numbers should be printed in ascending order.
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int i = 0;
-char c;
+int n, m;
 
-while (i < 10)
+for (n = 0; n < 10; n++)
 {
-c = i + '0';
-putchar(c);
-i++;
-}
-
-i = 97;
-while (i < 103)
+for (m = n + 1; m < 10; m++)
 {
-c = i;
-putchar(c);
-i++;
+putchar(n + '0');
+putchar(',');
+putchar(' ');
+putchar(m + '0');
+if (n == 8 && m == 9)
+continue;
+putchar(',');
+putchar(' ');
 }
-
+}
 putchar('\n');
 
 return (0);
