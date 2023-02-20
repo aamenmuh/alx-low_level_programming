@@ -3,31 +3,25 @@
 /**
  * main - Entry point
  *
- * Description: Prints all possible combinations of single-digit numbers.
- * Numbers must be separated by ',', followed by a space.
- * Numbers should be printed in ascending order.
+ * Description: Prints all possible combinations of single-digit numbers
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-int n, m;
+int i;
 
-for (n = 0; n < 10; n++)
+for (i = 0; i < 10; i++)
 {
-for (m = n + 1; m < 10; m++)
+putchar(i + '0');
+if (i != 9)
 {
-putchar(n + '0');
-putchar(',');
-putchar(' ');
-putchar(m + '0');
-if (n == 8 && m == 9)
-continue;
 putchar(',');
 putchar(' ');
 }
 }
+
 putchar('\n');
 
 return (0);
