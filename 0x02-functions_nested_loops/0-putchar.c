@@ -3,7 +3,7 @@
  * main - The main function of the code
  * Takes no parameters
  *
- * return - always returns 0 (success)
+ * Return: 0 always (success)
  */
 int main(void)
 {
