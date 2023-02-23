@@ -8,7 +8,7 @@ void print_to_98(int n)
 	int i, step;
 	
 	n > 98 ? step = -1 : step = 1; 
-	for (i = n; abs(i) < 98; i += step){
+	for (i = n; i != 98; i += step){
 		printf("%d", i);
 		printf(", ");
 	}
