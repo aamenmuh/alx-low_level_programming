@@ -5,13 +5,10 @@
  */
 void print_to_98(int n)
 {
-	int i;
-
-	for (i = n; i < 98; i++){
-		printf("%d", i);
-		printf(", ");
-	}
-	for (i = n; i > 98; i--){
+	int i, step;
+	
+	n > 98 ? step = -1 : step = 1; 
+	for (i = n; abs(i) < 98; i += step){
 		printf("%d", i);
 		printf(", ");
 	}
