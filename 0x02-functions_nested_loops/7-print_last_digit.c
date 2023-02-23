@@ -6,5 +6,5 @@
  * Return: returns the last digit
  */
 int print_last_digit(int n){
-	return (putchar(n % 10) ,n % 10);
+	return (printf("%d", n % 10) ,n % 10);
 }
