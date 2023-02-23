@@ -3,8 +3,8 @@
 /**
  * _isalpha - checks if the parameter is alphabetic
  * @c: the parameter
- * 
  *
+ * Return: always returns 1 or 0 (sucess).
  * Describtion: zeby
  */
 
