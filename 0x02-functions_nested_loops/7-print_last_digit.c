@@ -6,5 +6,5 @@
  * Return: returns the last digit
  */
 int print_last_digit(int n){
-	return ( n == 0 ? n % 10 : print_last_digit(n/10));
+	return ( n / 10 == 0 ? n % 10 : print_last_digit(n/10));
 }
