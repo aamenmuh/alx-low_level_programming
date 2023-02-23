@@ -4,11 +4,13 @@
  */
 void times_table(void)
 {
-	for(int j=0; j<10; j++)
+	int i, j =0;
+	
+	for(j=0; j < 10; j++)
 	{
-	for( int i=0 ; i< 10; i++)
+	for(i=0 ; i < 10; i++)
 	{
-		printf("%d", i*j, ", ");
+		printf("%d", i * j, ", ");
 	}
 	puchar('\n')
 }
