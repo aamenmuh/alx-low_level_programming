@@ -14,7 +14,7 @@ putchar((hour / 10) + '0');
 putchar((hour % 10) + '0');
 putchar(':');
 putchar((minute / 10) + '0');
-putchar((minute % 10) + '0');
+putchar((minute % 10) + '0' + '\n');
 }
 }
 }
