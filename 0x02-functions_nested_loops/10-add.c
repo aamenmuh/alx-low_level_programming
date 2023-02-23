@@ -4,7 +4,7 @@
  * @a: the first para
  * @b: the second para
  *
- *Return: the sum of a and b 
+ * Return: the sum of a and b
  */
 int add(int a, int b)
 {
