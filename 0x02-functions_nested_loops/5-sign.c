@@ -1,25 +1,24 @@
 #include <stdio.h>
 /**
- * print_sign - prints the sign of a number
+ * print_sign - checks the parity of the number
+ * @n: the parameter
  *
- * @n: the number to check
- *
- * Return: 1 if n is greater than zero, 0 if n is zero, -1 if n is less than zero
+ * Return: returns 1, 0, or -1 (sucess).
  */
-
 int print_sign(int n)
 {
-	int sign = 0;
-	
-	if (n > 0)
+	if (n>0)
 	{
-		sign = 1;
+		putchar('+');
+		return (1);
 	}
-	else if (n < 0)
+	else if (n==0)
 	{
-		sign = -1;
+		putchar('0');
+		return (0);
 	}
-	
-	printf("%d%c", sign, (sign == 0 ? '0' : '+'));
-	return sign;
+	else{
+		putchar('-');
+		return (-1);
+	}
 }
