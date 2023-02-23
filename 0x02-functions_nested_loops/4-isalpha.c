@@ -10,5 +10,5 @@
 
 int _isalpha(int c)
 {
-	r > 64 ? (r < 123 ? return (1)): return (0)
+	c > 64 ? (c < 123 ? return (1)): return (0)
 }
