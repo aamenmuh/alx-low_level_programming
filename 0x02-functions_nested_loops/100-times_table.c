@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * print_times_table  - prints the nth timetable of a number.
  * @n: the para
