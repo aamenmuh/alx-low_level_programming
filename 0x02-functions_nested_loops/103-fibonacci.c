@@ -16,7 +16,7 @@ int main(void)
 		sum += next_num;
 		num1 = num2;
 		num2 = next_num;
-    }
-    printf("%lu",sum - num2);
-    return (0);
+}
+    printf("%lu\n", sum - num2);
+return (0);
 }
