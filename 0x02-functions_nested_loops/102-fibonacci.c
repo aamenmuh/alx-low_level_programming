@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int num1 = 1, num2 = 2, count = 0;
+	long num1 = 1, num2 = 2, count = 0;
 
 	printf("%d, %d, ", num1, num2);
 	count = 2;
