@@ -12,12 +12,12 @@ int main(void)
 	printf("%lu, %lu, ", num1, num2);
 	count = 2;
 
-	while (count < 50)
+	while (count < 70)
 	{
 		long next_num = num1 + num2;
 		printf("%lu", next_num);
 
-		count < 49 ? printf(", ") : printf("\n");
+		count < 69 ? printf(", ") : printf("\n");
 
 		count++;
 		num1 = num2;
