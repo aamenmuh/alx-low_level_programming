@@ -18,7 +18,7 @@ int main(void)
 
 		printf("%d", next_num);
 
-		count < 49 ? printf(", ") : printf('\n');
+		count < 49 ? printf(", ") : printf("\n");
 
 		count++;
 		num1 = num2;
