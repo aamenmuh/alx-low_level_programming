@@ -14,9 +14,9 @@ int main(void)
 
 	while (count < 50)
 	{
-		int next_num = num1 + num2;
+		long next_num = num1 + num2;
 
-		printf("%d", next_num);
+		printf("%lu", next_num);
 
 		count < 49 ? printf(", ") : printf("\n");
 
