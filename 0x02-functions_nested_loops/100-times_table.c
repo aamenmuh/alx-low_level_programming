@@ -12,7 +12,7 @@ void print_times_table(int n)
 		for (i = 0; i < n; i++)
 		{
 			printf("%d", i * j);
-			(i + 1) * j < 10 ? printf(",   ") : printf(",  ");
+			(i + 1) * j < 10 ? printf(",   ") : ((i + 1) * j < 100 ? printf(",  ") : printf(", "));
 		}
 		printf("%d", i * j);
 		putchar('\n');
