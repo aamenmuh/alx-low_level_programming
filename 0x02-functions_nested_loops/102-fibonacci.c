@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	long long num1 = 1, num2 = 2, count = 0;
+	long num1 = 1, num2 = 2, count = 0;
 
-	printf("%lld, %lld, ", num1, num2);
+	printf("%li, %li, ", num1, num2);
 	count = 2;
 
 	while (count < 50)
