@@ -9,7 +9,7 @@ int main(void)
 {
 	long num1 = 1, num2 = 2, count = 0;
 
-	printf("%li, %li, ", num1, num2);
+	printf("%lu, %lu, ", num1, num2);
 	count = 2;
 
 	while (count < 50)
