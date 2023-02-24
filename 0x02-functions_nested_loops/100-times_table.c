@@ -9,7 +9,7 @@ void print_times_table(int n)
 
 	for (j = 0; j < (n + 1); j++)
 	{
-	for (i = 0 ; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", i * j);
 		(i) * j < (n + 1) ? printf(",  ") : printf(", ");
