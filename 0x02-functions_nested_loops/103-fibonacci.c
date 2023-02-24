@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	int num1 = 2, num2 = 8, sum = 2;
+	long num1 = 2, num2 = 8, sum = 2;
 
 	while (num2 < 4000000)
 	{
-		int next_num = 4 * num2 + num1;
+		long next_num = 4 * num2 + num1;
 
 		sum += next_num;
 		num1 = num2;
