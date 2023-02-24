@@ -6,8 +6,8 @@
 void print_times_table(int n)
 {
 	int i, j = 0;
-	int add1;
-	
+	int a;
+
 	if (n > -1 && n < 16)
 	{
 		for (j = 0; j < (n + 1); j++)
@@ -16,7 +16,7 @@ void print_times_table(int n)
 		{
 			add1 = i + 1;
 			printf("%d", i * j);
-			add1 * j < 10 ? printf(",   ") : (add1 * j < 100 ? printf(",  ") : printf(", "));
+			a * j < 10 ? printf(",   ") : (a * j < 100 ? printf(",  ") : printf(", "));
 		}
 		printf("%d", i * j);
 		putchar('\n');
