@@ -23,7 +23,7 @@ int main(void)
 		count++;
 		num1 = num2;
 		num2 = next_num;
-    }
+}
 
-    return (0);
+return (0);
 }
