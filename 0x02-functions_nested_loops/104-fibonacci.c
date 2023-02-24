@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	uint64_t num1 = 1, num2 = 2, count = 0;
+	long num1 = 1, num2 = 2, count = 0;
 
 	printf("%lu, %lu, ", num1, num2);
 	count = 2;
 
 	while (count < 98)
 	{
-		uint64_t next_num = num1 + num2;
+		long next_num = num1 + num2;
 
 		printf("%lu", next_num);
 
