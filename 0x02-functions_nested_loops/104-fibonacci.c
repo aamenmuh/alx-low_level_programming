@@ -14,7 +14,7 @@ int main(void)
 
 	while (count < 98)
 	{
-		int next_num = num1 + num2;
+		long next_num = num1 + num2;
 		printf("%lu", next_num);
 
 		count < 97 ? printf(", ") : printf("\n");
