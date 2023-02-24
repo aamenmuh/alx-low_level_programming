@@ -17,6 +17,6 @@ int main(void)
 		num1 = num2;
 		num2 = next_num;
     }
-    printf(sum);
+    printf("%lu",sum);
     return (0);
 }
