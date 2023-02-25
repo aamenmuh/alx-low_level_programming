@@ -1,22 +1,31 @@
 #include <stdio.h>
 /**
- * print_number - prints the number
- * @n: the para
+ * print_number - prints an integer to standard output
+ * @n: the integer to be printed
+ *
+ * Return: void
  */
 void print_number(int n)
 {
-	int i, count;
+    int divisor = 1;
+    int remainder;
 
-	int divv = n;
+    if (n < 0)
+    {
+        putchar('-');
+        n *= -1;
+    }
 
-	while (divv)
-	{
-		count++;
-		divv /= 10;
-	}
-	while (count)
-	{
-		putchar(n / ('0' + 10 * count));
-		count--;
-	}
+    while (n / divisor >= 10)
+    {
+        divisor *= 10;
+    }
+
+    while (divisor > 0)
+    {
+        remainder = n % divisor;
+        putchar('0' + (n / divisor));
+        n = remainder;
+        divisor /= 10;
+    }
 }
