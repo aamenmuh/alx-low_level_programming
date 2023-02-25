@@ -11,10 +11,15 @@ void print_number(int n)
     int divisor = 1;
     int remainder;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
     if (n < 0)
     {
         _putchar('-');
-        n *= 1;
+        n *= -1;
     }
 
     while (n / divisor >= 10)
