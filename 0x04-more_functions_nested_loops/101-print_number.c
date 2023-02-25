@@ -7,12 +7,12 @@ void print_number(int n)
 {
 	int i, count;
 
-	int div = n;
+	int divv = n;
 
-	while (div)
+	while (divv)
 	{
 		count++;
-		div /= 10;
+		divv /= 10;
 	}
 	while (count)
 	{
