@@ -5,13 +5,18 @@
  */
 void print_number(int n)
 {
-	int i;
+	int i, count;
 
 	int div = n;
 
 	while (div)
 	{
-		putchar(div);
+		count++;
 		div /= 10;
+	}
+	while (count)
+	{
+		putchar(n / (10 * count));
+		count--;
 	}
 }
