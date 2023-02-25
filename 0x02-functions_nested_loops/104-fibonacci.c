@@ -18,7 +18,7 @@ int main(void)
 
 		/*printf("%lu", next_num);*/
 
-		count < 97 ? printf(", ") : printf("\n");
+		/*count < 97 ? printf(", ") : printf("\n");*/
 
 		count++;
 		num1 = num2;
