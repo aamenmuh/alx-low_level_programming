@@ -11,11 +11,6 @@ void print_number(int n)
     int divisor = 1;
     int remainder;
 
-	if (n == 0)
-	{
-		_putchar(48);
-		return;
-	}
     if (n < 0)
     {
         _putchar('-');
@@ -33,5 +28,5 @@ void print_number(int n)
         _putchar('0' + (n / divisor));
         n = remainder;
         divisor /= 10;
-    }
+	}
 }
