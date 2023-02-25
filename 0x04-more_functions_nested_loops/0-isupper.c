@@ -1,10 +1,10 @@
 /**
-*_isUpper - checks if upper
-*
-*@c: para
-*
-*Return: 1 or 0
-*/
+ * _isupper - checks if a character is uppercase
+ *
+ * @c: the character to check
+ *
+ * Return: 1 if c is uppercase, 0 otherwise
+ */
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
