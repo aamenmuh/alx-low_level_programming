@@ -1,9 +1,9 @@
-#include <stdio.h>
 /**
-* _isUpper - checks if upper
-* @c: para
+*_isUpper - checks if upper
 *
-* Return: 1 or 0
+*@c: para
+*
+*Return: 1 or 0
 */
 int _isupper(int c)
 {
@@ -13,6 +13,6 @@ int _isupper(int c)
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
