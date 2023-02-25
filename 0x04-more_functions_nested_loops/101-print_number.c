@@ -14,12 +14,12 @@ void print_number(int n)
     if (n < 0)
     {
         _putchar('-');
-        n = -n;
+        n *= -1;
     }
 
     while (n / divisor >= 10)
     {
-        divisor = 10 * divisor;
+        divisor *= 10;
     }
 
     while (divisor)
@@ -27,6 +27,6 @@ void print_number(int n)
         remainder = n % divisor;
         _putchar('0' + (n / divisor));
         n = remainder;
-        divisor = divisor / 10;
+        divisor /= 10;
     }
 }
