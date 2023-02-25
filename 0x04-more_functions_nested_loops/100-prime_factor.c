@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	const long N = 612852475143;
+	long N = 612852475143;
 	long i, largest_factor;
 
 	largest_factor = 1;
