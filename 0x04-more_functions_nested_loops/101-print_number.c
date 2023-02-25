@@ -21,7 +21,7 @@ void print_number(int n)
         divisor *= 10;
     }
 
-    while (divisor > 0)
+    while (divisor)
     {
         remainder = n % divisor;
         putchar('0' + (n / divisor));
