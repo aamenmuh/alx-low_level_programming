@@ -16,7 +16,7 @@ void print_number(int n)
 	}
 	while (count)
 	{
-		putchar(n / (10 * count));
+		putchar(n / ('0' + 10 * count));
 		count--;
 	}
 }
