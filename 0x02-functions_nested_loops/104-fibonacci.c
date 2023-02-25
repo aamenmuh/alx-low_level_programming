@@ -7,16 +7,16 @@
 
 int main(void)
 {
-	int num1 = 1, num2 = 2, count = 0;
+	long num1 = 1, num2 = 2, count = 0;
 
-	printf("%d, %d, ", num1, num2);
+	printf("%lu, %lu, ", num1, num2);
 	count = 2;
 
 	while (count < 98)
 	{
-		int next_num = num1 + num2;
+		long next_num = num1 + num2;
 
-		printf("%d", next_num);
+		printf("%lu", next_num);
 
 		count < 97 ? printf(", ") : printf("\n");
 
