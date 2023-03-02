@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * _strcat - a function that concatinates two strings
  * @dest: first para
