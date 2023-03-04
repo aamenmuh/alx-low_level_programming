@@ -14,7 +14,7 @@ char *leet(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 5 ; j++)
-    {
+		{
 			if (str[i] == lowerCase[j] || str[i] == upperCase[j])
 				str[i] = encoding[j];
 		}
