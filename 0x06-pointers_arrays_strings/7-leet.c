@@ -20,5 +20,6 @@ char *leet(char *str)
 				str[i] = encoding[j];
 		}
 	}
+
 	return (str);
 }
