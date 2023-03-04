@@ -8,6 +8,7 @@
 char *leet(char *str)
 {
 	int i, j;
+	
 	char lowerCase[] = {'a', 'e', 'o', 't', 'l', '\0'};
 	char upperCase[] = {'A', 'E', 'O', 'T', 'L', '\0'}; 
 	char encoding[] = {'4', '3', '0', '7', '1', '\0'};
