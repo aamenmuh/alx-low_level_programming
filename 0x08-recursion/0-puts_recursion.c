@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * _puts_recursion - recursively prints.
- *
- * Return: zobry
+ * @s: pointer to string
  */
 void _puts_recursion(char *s)
 {
