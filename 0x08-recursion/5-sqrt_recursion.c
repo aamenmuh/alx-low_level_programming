@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 			return _sqrt_recursion(middle - 1);
 		else
 		{
-			remainder = _sqrt_recursion(n - middle * middle);
+			int remainder = _sqrt_recursion(n - middle * middle);
 			return remainder == -1 ? -1 : middle;
 		}
 	}
