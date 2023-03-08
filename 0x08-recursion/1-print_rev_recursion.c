@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * _print_rev_recursion - recursively prints.
- *
- * Return: zobry
+ * @s: pointer to char
  */
 void _print_rev_recursion(char *s)
 {
