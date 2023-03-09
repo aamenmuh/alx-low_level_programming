@@ -1,3 +1,4 @@
+#include <string.h>
 int is_palindrome(char *s)
 {
 	if (strlen(s) == 0)
