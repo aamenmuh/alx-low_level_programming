@@ -8,6 +8,6 @@ int is_palindrome(char *s)
 	if (s[0] != s[length - 1])
 		return (0);
 
-	memcpy(s, s, length - 1 );
+	s[length - 1] = '\0';
 	return is_palindrome(s + 1);
 }
