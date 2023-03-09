@@ -1,10 +1,13 @@
 #include <string.h>
 int is_palindrome(char *s)
 {
-	if (strlen(s) == 0)
+	int length = strlen(s);
+
+	if (length == 0)
 		return (1);
-	if (s[0] != s[strlen(s) - 1])
+	if (s[0] != s[length - 1])
 		return (0);
-	s[strlen(s)] = '\0';
-	return is_palindrome(s + 1);
+
+	memcpy(s, s + 1, length - 1 )
+	return is_palindrome(s);
 }
