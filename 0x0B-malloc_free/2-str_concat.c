@@ -15,10 +15,10 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < strlen(s1) + strlen(s2) + 1; i++)
 	{
-		if(i < strlen(s1) + 1)
+		if (i < strlen(s1))
 			array[i] = s1[i];
 		else
-			array[i] = s2[i - strlen(s1) - 1];
+			array[i] = s2[i - strlen(s1)];
 	}
 
 	return (array);
