@@ -22,5 +22,5 @@ char *str_concat(char *s1, char *s2)
 			array[i] = s2[i - strlen(s1) - 1];
 	}
 
-	return (array)
+	return (array);
 }
