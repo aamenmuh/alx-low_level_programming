@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * str_concat - concatinates two strings
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: concatinated string
+ */
 char *str_concat(char *s1, char *s2)
 {
-	char* array;
+	char *array;
 	size_t i;
 
 	if (s1 == NULL)
