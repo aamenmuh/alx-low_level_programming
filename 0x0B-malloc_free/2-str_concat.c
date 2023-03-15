@@ -11,8 +11,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	array = (char *)malloc(strlen(s1) + 1);
-	array = realloc(array, strlen(s2) + 1);
+	array = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 
 	for (i = 0; i < strlen(s1) + strlen(s2) + 1; i++)
 	{
