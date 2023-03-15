@@ -3,7 +3,7 @@
 #include <string.h>
 char *str_concat(char *s1, char *s2)
 {
-	char* array;
+	/*char* array;*/
 	size_t i;
 
 	if (s1 == NULL)
