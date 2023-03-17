@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - returns conacatinated string
  * @s1: first string
