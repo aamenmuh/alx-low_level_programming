@@ -31,9 +31,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (i < strlen(s1))
 			pointer[i] = s1[i];
 		else
-			pointer[i] = s2[i];
+			pointer[i] = s2[i - strlen(s1)];
 	}
-	pointer[strlen(s1) + n + 1] = '\0';
 
 	return (pointer);
 }
