@@ -6,7 +6,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *pointer = malloc(b);
+	unsigned int *pointer = malloc(b);
 
 	if (pointer == NULL)
 		return (3);
