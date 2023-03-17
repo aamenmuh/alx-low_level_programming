@@ -10,7 +10,6 @@ void *malloc_checked(unsigned int b)
 
 	if (pointer == NULL)
 		return (3);
-	else
-		return (pointer);
+	return (pointer);
 
 }
