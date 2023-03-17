@@ -33,6 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 			pointer[i] = s2[i - strlen(s1)];
 	}
+	pointer[strlen(s1) + n + 1] = '\0';
 
 	return (pointer);
 }
