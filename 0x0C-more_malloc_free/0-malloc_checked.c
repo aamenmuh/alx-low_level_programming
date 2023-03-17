@@ -3,11 +3,13 @@
 /**
  * malloc_checked - same as malloc
  * @b: size to be passed
+ *
+ * Return: returns pointer to the address
  */
 void *malloc_checked(unsigned int b)
 {
 	unsigned int *pointer;
-	
+
 	pointer = malloc(b);
 
 	if (pointer == NULL)
