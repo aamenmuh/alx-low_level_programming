@@ -3,6 +3,8 @@
  * @name: pointer to name
  * @age: the age
  * @owner: pointer to owner
+ *
+ * Description: Longer description
  */
 struct dog
 {
