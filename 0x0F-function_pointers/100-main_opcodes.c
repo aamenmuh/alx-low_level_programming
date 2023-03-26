@@ -27,12 +27,10 @@ int main(int argc, char **argv)
 
 	unsigned char *ptr = (unsigned char *)main;
 
-	for (i = 0; i < num_bytes; i++)
-	{
-		printf("%02x ", *ptr);
-		ptr++;
-		printf("\n");
-	}
+	printf("%.2x", *ptr);
+	for (i = 1; i < num_bytes; i++)
+		printf(" %.2x", *(ptr + i));
+	printf("\n");
 
 	return (0);
 }
