@@ -1,3 +1,4 @@
+#include <calc.h>
 /**
  * get_op_func - selects the correct operation
  * @s: string input
