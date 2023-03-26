@@ -31,9 +31,8 @@ int main(int argc, char **argv)
 	{
 		printf("%02x ", *ptr);
 		ptr++;
+		printf("\n");
 	}
-
-	printf("\n");
 
 	return (0);
 }
