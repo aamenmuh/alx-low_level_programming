@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		fprintf(stderr, "Error\n");
-		eixt (1);
+		exit (1);
 	}
 
 	int num_bytes = atoi(argv[1]);
