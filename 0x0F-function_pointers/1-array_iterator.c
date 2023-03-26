@@ -1,4 +1,5 @@
- /**
+#include <stdio.h> 
+/**
   * array_iterator - applies action over an array
   * @array: the array
   * @size: size of array
