@@ -4,7 +4,7 @@
   * @array: the array
   * @size: size of array
   * @action: the actino to be taken
-  */
+*/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
