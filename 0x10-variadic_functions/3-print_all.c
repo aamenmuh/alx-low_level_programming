@@ -46,7 +46,7 @@ void print_all(const char * const format, ...)
 			break;
 	}
 	}
-	else
+	if (format == NULL)
 	{
 		printf("%s", va_arg(ap, char *));
 	}
