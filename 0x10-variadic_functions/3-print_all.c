@@ -7,7 +7,7 @@ void print_all(const char * const format, ...)
 	int i, length;
 	
 	length = strlen(format);
-	va_start(ap,length);
+	va_start(ap,format);
 	i = 0;
 	while (i < length - 1)
 	{
