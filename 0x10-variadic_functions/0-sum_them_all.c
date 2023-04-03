@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdio.h>
 /**
  * sum_them_all - adds all numbers
  * @n: the number of numbers
