@@ -9,6 +9,8 @@ void print_all(const char * const format, ...)
 	length = strlen(format);
 	va_start(ap,format);
 	i = 0;
+	if(format != NULL)
+	{
 	while (i < length - 1)
 	{
 		switch(format[i])
@@ -42,6 +44,11 @@ void print_all(const char * const format, ...)
 		case 'c':
 			printf("%c\n", (char)va_arg(ap, int));
 			break;
+	}
+	}
+	else
+	{
+		printf("%s", va_arg(ap, char *));
 	}
 	va_end(ap);
 }
