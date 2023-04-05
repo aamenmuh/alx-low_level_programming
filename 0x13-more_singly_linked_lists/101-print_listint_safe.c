@@ -10,9 +10,11 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *tortoise, *hare;
-	size_t count = 0;
+	size_t count;
 
-	tortoise = hare = head;
+	count = 0;
+	tortoise = hare;
+	hare = head;
 	while (tortoise && hare && hare->next)
 	{
 		tortoise = tortoise->next;
