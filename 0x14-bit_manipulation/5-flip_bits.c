@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * flip_bits: gets you required flips
  * @n: first number
