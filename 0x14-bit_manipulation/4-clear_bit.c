@@ -6,10 +6,10 @@
  *
  * Return: returns the new number
  */
-int clear_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index > 33)
 		return (-1);
-	*n &= ~(1UL << index);
+	*n &= (0 << index);
 	return (1);
 }
