@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * binary_to_uint - converts binary to denary
  * @b: string of binary chars
