@@ -1,5 +1,6 @@
+#include <stdio.h>
 /**
- * clear_bit - sets the bit to 1
+ * clear_bit - sets the bit to 0
  * @n: number in denary
  * @index: position to set
  *
