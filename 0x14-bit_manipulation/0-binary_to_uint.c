@@ -1,5 +1,4 @@
 #include <string.h>
-#include <math.h>
 /**
  * binary_to_uint - converts binary to denary
  * @b: string of binary chars
@@ -18,12 +17,14 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != 0 && b[i] != 1)
-			return (0)
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 		stringSize += 1;
 	}
 	for (j = 0; b[j] != '\0'; j++)
-		finalValue += (b[j] * pow(2, stringSize - j));
-
+	{
+		finalValue = finalValue << 1;
+		finalValue += (b[j] - '0')
+	}
 	return (finalValue);
 }
