@@ -1,15 +1,22 @@
-#include <stdio.h>
 /**
- * flip_bit - sets the bit to 0
- * @n: number in denary
- * @index: position to set
+ * flip_bits: gets you required flips
+ * @n: first number
+ * @m: second number
  *
- * Return: returns the new number
+ * Return: returns the number of req bits.
  */
-int flip_bit(unsigned long int *n, unsigned int index)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	if (index > 33)
-		return (-1);
-	*n ^= (1UL << index);
-	return (1);
+	unsigned long int differentBits;
+	unsigned int numberOfBits;
+
+	differentBits = n ^ m;
+
+	while (differentBits != 0)
+	{
+		numberOfBits += differentBits & 1;
+		differentBits >>= 1;
+	}
+
+	return (numberOfBits)
 }
