@@ -22,5 +22,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime_number(n - 5) || is_prime_number(n - 7));
+	return (is_prime_number(n - 6);
 }
