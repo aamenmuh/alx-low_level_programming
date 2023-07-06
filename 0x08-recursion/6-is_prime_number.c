@@ -27,5 +27,9 @@ int helperPrime(int n, int divisor)
  */
 int is_prime_number(int n)
 {
+	if (n < 2)
+	{
+		return (0);
+	}
 	return (helperPrime(n,n - 1));
 }
