@@ -8,7 +8,8 @@
  */
 int is_palindrome(char *s)
 {
-	size_t len = strlen(s);
+	int len = strlen(s);
+	int result;
 
 	if (len == 0)
 	{
@@ -17,9 +18,9 @@ int is_palindrome(char *s)
 	if (s[0] == s[len - 1])
 	{
 		s[len - 1] = '\0';
-		int result = is_palindrome(s + 1);
+		result = is_palindrome(s + 1);
 		s[len - 1] = s[0];
 		return (result);
 	}
-	return 0;
+	return (0);
 }
