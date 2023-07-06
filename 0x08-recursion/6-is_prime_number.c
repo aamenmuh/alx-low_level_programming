@@ -14,13 +14,9 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	if (n == 2 || n == 3 || n == 5)
+	if (n == 2)
 	{
 		return (1);
 	}
-	if ((n - 1) % 6 != 0 && (n + 1) % 6 != 0)
-	{
-		return (0);
-	}
-	return (is_prime_number(n - 6);
+	return (is_prime_number(n / 2) == 1);
 }
