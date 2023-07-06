@@ -1,5 +1,5 @@
 /**
- * _pow_recursion - returns square root of number
+ * _sqrt_recursion - returns square root of number
  * @n: the number
  *
  * Return: sqrt n
