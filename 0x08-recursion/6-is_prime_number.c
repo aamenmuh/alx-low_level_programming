@@ -31,5 +31,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (helperPrime(n,n - 1));
+	return (helperPrime(n, n - 1));
 }
