@@ -20,7 +20,7 @@ int helperPalin(char *s, int startIndex, int endIndex)
 		return (0);
 	}
 
-	return helperPalin(s, startIndex + 1, endIndex - 1);
+	return (helperPalin(s, startIndex + 1, endIndex - 1));
 }
 /**
  * is_palindrome - checks if a string is a palindrome
