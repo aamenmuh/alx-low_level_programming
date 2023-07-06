@@ -15,7 +15,7 @@ int helperPalin(char *s, int startIndex, int endIndex)
 		return (1);
 	}
 
-	if (s[start] != s[end])
+	if (s[startIndex] != s[endIndex])
 	{
 		return (0);
 	}
