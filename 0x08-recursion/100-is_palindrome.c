@@ -1,6 +1,28 @@
 #include <string.h>
 #include <stdio.h>
 /**
+ * helperPalin - a helper function for palindrome
+ * @s: the string
+ * @startIndex: the start index
+ * @endIndex: the ending index
+ *
+ * Return: returns 1 if the string is a palindrome, 0 otherwise
+ */
+int helperPalin(char *s, int startIndex, int endIndex)
+{
+	if (startIndex > endIndex - 1)
+	{
+		return (1);
+	}
+
+	if (s[start] != s[end])
+	{
+		return (0);
+	}
+
+	return helperPalin(s, startIndex + 1, endIndex - 1);
+}
+/**
  * is_palindrome - checks if a string is a palindrome
  * @s: the string
  *
@@ -8,19 +30,8 @@
  */
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
-	int result;
+	int stringLength;
 
-	if (len == 0)
-	{
-		return (1);
-	}
-	if (s[0] == s[len - 1])
-	{
-		s[len - 1] = '\0';
-		result = is_palindrome(s + 1);
-		s[len - 1] = s[0];
-		return (result);
-	}
-	return (0);
+	stringLength = strlen(s);
+	return (helperPalin(s, 0, stringLength - 1));
 }
