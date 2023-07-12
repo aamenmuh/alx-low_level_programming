@@ -9,10 +9,10 @@
 char **strtow(char *str)
 {
 	char **words;
-	int wordNum, i, cI, size, j;
+	int wordNum, i, cI, size, k;
 
 	cI = 0;
-	if (str == NULL || str == "")
+	if (str == NULL || strlen(str) == 0)
 	{
 		return (NULL);
 	}
@@ -43,7 +43,7 @@ char **strtow(char *str)
 			{
 				for (i = 0; i < cI; i++)
 				{
-					free(words[CI])
+					free(words[cI]);
 				}
 				free(words);
 				return (NULL);
