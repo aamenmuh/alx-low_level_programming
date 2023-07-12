@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 /**
  * main - the main function
  * @argc: number of arguments
@@ -31,6 +32,6 @@ int main(int argc, char *argv[])
 	counter += value / 2;
 	value %= 2;
 	counter += value;
-	printf("%d", coutner);
+	printf("%d", counter);
 	return (0);
 }
