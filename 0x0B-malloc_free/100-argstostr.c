@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * argstostr - conc args
  * @ac: number of args
@@ -9,8 +10,9 @@
 char *argstostr(int ac, char **av)
 {
 	char *args;
-	int size, i;
+	int size, i, j;
 
+	j = 0;
 	size = 0;
 	if (ac == 0 || av == NULL)
 	{
@@ -19,19 +21,20 @@ char *argstostr(int ac, char **av)
 
 	for (i = 1; i < ac; i++)
 	{
-		size += sizeof(av[i]);
-	}
-
-	size += (ac - 1) * sizeof(char);
-	args = malloc(size);
+		size += strlen(av[i]) + 1;
+	;
+	args = malloc((size + 1) * sizeof(char));
 	if (args == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 1; i < 2 * ac - 1; i += 2)
+	for (i = 0; i < ac; i++)
 	{
-		args[i] = av[i];
-		args[i + 1] = '\n';
+		strcpy(result + j, av[i]);
+		j += strlen(av[i]);
+		args[j] = '\n';
+		j++;
 	}
+	args[size] = '\0';
 	return (args);
 }
