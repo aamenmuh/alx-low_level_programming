@@ -10,12 +10,12 @@ char *_strdup(char *str)
 {
 	char *newstr;
 	int i, size;
-	size = strlen(str);
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	size = strlen(str) + 1;
 	newstr = malloc(size);
 
 	if(newstr == NULL)
