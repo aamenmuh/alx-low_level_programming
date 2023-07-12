@@ -24,6 +24,10 @@ char **strtow(char *str)
 			wordNum++;
 		}
 	}
+	if (wordNum == 0)
+	{
+		return (NULL);
+	}
 	words = (char **)malloc((wordNum + 1) * sizeof(char *));
 	if (words == NULL)
 	{
