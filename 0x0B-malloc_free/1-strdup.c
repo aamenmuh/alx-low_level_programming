@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - copies string
  * @str: the string
@@ -9,13 +10,13 @@ char *_strdup(char *str)
 {
 	char *newstr;
 	int i, size;
-	size = sizeof(str);
+	size = strlen(str);
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	newstr = malloc(size * sizeof(char));
+	newstr = malloc(size);
 
 	if(newstr == NULL)
 	{
