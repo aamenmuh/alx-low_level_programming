@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * alloc_grid: mem for grid
+ * alloc_grid - mem for grid
  * @width: width
  * @height: height
  *
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = (int *)calloc(width, sizeof(int));
+		grid[i] = (int *)malloc(width * sizeof(int));
 
 		if (grid[i] == NULL)
 		{
