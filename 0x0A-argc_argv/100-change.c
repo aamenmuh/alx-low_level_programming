@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
 	counter += value / 2;
 	value %= 2;
 	counter += value;
-	printf("%d", counter);
+	printf("%d\n", counter);
 	return (0);
 }
