@@ -12,7 +12,6 @@ char **strtow(char *str)
 	int wordNum, i, cI, size, k;
 
 	cI = 0;
-	z= 0;
 	if (str == NULL || strlen(str) == 0)
 		return (NULL);
 	size = strlen(str);
