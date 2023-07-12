@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 		}
 		else
 		{
-			concString[i] = s2[i - strlen(s1)]
+			concString[i] = s2[i - strlen(s1)];
 		}
 	}
 	return (concString);
