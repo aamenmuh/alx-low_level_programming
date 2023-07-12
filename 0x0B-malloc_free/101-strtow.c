@@ -9,7 +9,7 @@
 char **strtow(char *str)
 {
 	char **words;
-	int wordNum, i, cI, size, k, z;
+	int wordNum, i, cI, size, k;
 
 	cI = 0;
 	z= 0;
