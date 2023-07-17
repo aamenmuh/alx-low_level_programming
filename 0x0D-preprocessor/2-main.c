@@ -5,7 +5,8 @@
  *
  * Return: always 0, success
  */
-int main(){
+int main()
+{
 	printf("%s\n", __FILE__);
-	return 0;
+	return (0);
 }
