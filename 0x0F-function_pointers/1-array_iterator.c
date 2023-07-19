@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * array_iterator - applies func to all arrays
  * @array: the array
