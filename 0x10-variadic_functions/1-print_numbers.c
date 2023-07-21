@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_numbers - print all args
  * @n: number of args
