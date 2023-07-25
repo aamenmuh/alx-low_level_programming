@@ -5,7 +5,7 @@ int _printf(char * format, ...)
 {
     va_list ap;
     char c, *s;
-    int d, count, len;
+    int count, len;
     count = 0;
 	len = 0;
     
