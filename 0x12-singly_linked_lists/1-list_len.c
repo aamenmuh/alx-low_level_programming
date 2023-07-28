@@ -2,7 +2,7 @@
 #include "lists.h"
 /**
  * list_len - returns length of list
- * @param h: pointer to list
+ * @h: pointer to list
  *
  * Return: returns the length
  */
