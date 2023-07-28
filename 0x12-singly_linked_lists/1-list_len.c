@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  * list_len - returns length of list
