@@ -1,5 +1,5 @@
-#include "lists.h"
-void preMain(void) __attribute__((constructor));
+#include <stdio.h>
+void preMain(void)__attribute__((constructor));
 /**
  * preMain - executes before main
  *
