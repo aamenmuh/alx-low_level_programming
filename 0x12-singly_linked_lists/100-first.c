@@ -1,4 +1,5 @@
-void preMain() __attribute((constructor));
+#include <stdio.h>
+\void preMain() __attribute((constructor));
 /**
  * preMain - executes before main
  */
