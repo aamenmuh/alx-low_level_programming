@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lists.h"
 void preMain(void) __attribute__((constructor));
 /**
  * preMain - executes before main
