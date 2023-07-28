@@ -2,6 +2,8 @@
 void preMain(void) __attribute__((constructor));
 /**
  * preMain - executes before main
+ *
+ * Return: nothing
  */
 void preMain(void)
 {
