@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
  * listint_len - returns length of list
@@ -12,7 +13,7 @@ size_t listint_len(const listint_t *h)
 	counter = 0;
 	while (h != NULL)
 	{
-		coutner++;
+		counter++;
 		h = h->next;
 	}
 	return (counter);
