@@ -4,10 +4,10 @@
  *
  * Return: 1 if little, 0 if big
  */
-int get_endianness(void)
+int get_endianness()
 {
 	unsigned long int n;
 
 	n = 1ul;
-	return ((*(char *)(&n)));
+	return (*((char *)(&n)));
 }
