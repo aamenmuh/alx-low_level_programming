@@ -12,5 +12,5 @@ int get_endianness(void)
 	n = 1ul;
 	firstBit = (long unsigned int *)NULL;
 	firstBit = &n;
-	return ((int *)firstBit);
+	return (*(int *)firstBit);
 }
