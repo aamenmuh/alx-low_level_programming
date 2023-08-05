@@ -4,7 +4,7 @@
  *
  * Return: 1 if little, 0 if big
  */
-int get_endianness()
+int get_endianness(void)
 {
 	unsigned long int n;
 	long unsigned int *firstBit;
