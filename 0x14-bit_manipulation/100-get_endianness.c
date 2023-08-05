@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * get_endianness - checks endiannes by checking how 1 is stored
  *
@@ -9,5 +9,5 @@ int get_endianness()
 	unsigned long int n;
 
 	n = 1ul;
-	return (*((char *)(&n)));
+	return (char)(&n);
 }
