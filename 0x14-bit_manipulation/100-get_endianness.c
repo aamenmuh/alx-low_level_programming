@@ -9,6 +9,6 @@ int get_endianness()
 	char *firstBit;
 
 	n = 1ul;
-	firstBit = &n;
+	*firstBit = &n;
 	return firstBit;
 }
