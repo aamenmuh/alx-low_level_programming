@@ -8,7 +8,8 @@ int get_endianness()
 	unsigned long int n;
 	char *firstBit;
 
+	*firstBit = NULL;
 	n = 1ul;
 	*firstBit = &n;
-	return firstBit;
+	return *firstBit;
 }
