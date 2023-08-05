@@ -8,7 +8,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int size, i;
+	unsigned int size;
 	int currentBit;
 
 	size = sizeof(unsigned long int) * 8;
