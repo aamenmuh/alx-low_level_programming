@@ -1,4 +1,3 @@
-#include <stdlib.h>
 /**
  * get_endianness - checks endiannes by checking how 1 is stored
  *
