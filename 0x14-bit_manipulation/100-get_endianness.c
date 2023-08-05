@@ -9,7 +9,7 @@ int get_endianness()
 	unsigned long int n;
 	long unsigned int *firstBit;
 
-	*firstBit = NULL;
+	*firstBit = (long unsigned int *)NULL;
 	n = 1ul;
 	firstBit = &n;
 	return *firstBit;
