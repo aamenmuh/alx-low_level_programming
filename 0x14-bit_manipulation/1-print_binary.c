@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_binary prints binary rep
+ * print_binary - prints binary rep
  *
  * @n: number
  */
@@ -25,7 +25,8 @@ void print_binary(unsigned long int n)
 		{
 			foundNonZero = 1;
 			printf("1");
-		}else if (foundNonZero)
+		}
+		else if (foundNonZero)
 			printf("0");
 	}
 }
