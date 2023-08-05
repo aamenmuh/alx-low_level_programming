@@ -9,5 +9,5 @@ int get_endianness()
 	unsigned long int n;
 
 	n = 1ul;
-	return (char *)(&n);
+	return (*(char *)(&n));
 }
