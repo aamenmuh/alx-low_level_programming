@@ -6,7 +6,7 @@
 int get_endianness()
 {
 	unsigned long int n;
-	int *firstBit;
+	long unsigned int *firstBit;
 
 	*firstBit = NULL;
 	n = 1ul;
