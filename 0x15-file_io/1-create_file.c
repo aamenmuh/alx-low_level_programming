@@ -22,14 +22,14 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content == NULL)
 	{
-		close(openStatus);
+		fclose(openStatus);
 		return (1);
 	}
 	length = strlen(text_content);
-	writeBytes = write(openStatus, text_content, length);
+	writeBytes = fwrite(openStatus, text_content, length);
 	if (writeBytes != length)
 	{
-		close(openStatus);
+		fclose(openStatus);
 		return (-1);
 	}
 	return (1);
