@@ -34,7 +34,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	allocation[readBytes] = '\0';
 
-	writeBytes = fwrite(allocaiton, 1, readBytes, stdout);
+	writeBytes = fwrite(allocation, 1, readBytes, stdout);
 	if (writeBytes != readBytes)
 	{
 		free(allocation);
