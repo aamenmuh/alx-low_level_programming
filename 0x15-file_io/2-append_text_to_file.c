@@ -29,7 +29,7 @@
  	writeBytes = write(openStatus, text_content, length);
  	if (writeBytes != length)
  	{
- 		close(openStatus)
+ 		close(openStatus);
  		return (-1);
  	}
  	close(openStatus);
