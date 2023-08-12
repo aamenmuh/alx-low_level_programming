@@ -12,7 +12,7 @@
   *
   * Return: 0 on success, exits on failure
   */
- int main(int argc, char *argv)
+ int main(int argc, char **argv)
 {
 	int fileFrom, fileTo;
 	char buffer[BUFFER];
@@ -24,7 +24,7 @@
 		dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fileFrom = open(argv[1], O_RDONLY)
+	fileFrom = open(argv[1], O_RDONLY);
 	if (fileFrom == -1)
 	{
 		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
