@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 /**
  * create_file - creates a files with given content
  * @filename: name of file
