@@ -17,21 +17,20 @@
  	ssize_t length;
  	ssize_t writeBytes;
 
- 	if (filename == NULL)
- 		return (-1);
-
- 	if (text_content == NULL)
- 		return (1);
- 	openStatus = open(filename, O_APPEND);
- 	if (openStatus == -1)
- 		return (-1);
- 	length = strlen(text_content);
- 	writeBytes = write(openStatus, text_content, length);
- 	if (writeBytes != length)
- 	{
- 		close(openStatus);
- 		return (-1);
- 	}
- 	close(openStatus);
- 	return (1);
+	if (filename == NULL)
+		return (-1);
+	if (text_content == NULL)
+		return (1);
+	openStatus = open(filename, O_APPEND);
+	if (openStatus == -1)
+		return (-1);
+	length = strlen(text_content);
+	writeBytes = write(openStatus, text_content, length);
+	if (writeBytes != length)
+	{
+		close(openStatus);
+		return (-1);
+	}
+	close(openStatus);
+	return (1);
  }
