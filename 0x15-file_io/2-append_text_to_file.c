@@ -33,5 +33,5 @@
  		return (-1);
  	}
  	close(openStatus);
- 	retun (1);
+ 	return (1);
  }
