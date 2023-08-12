@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <string>
+#include <string.h>
 /**
  * create_file - creates a files with given content
  * @filename: name of file
