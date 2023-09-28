@@ -10,7 +10,7 @@ int get_endianness(void)
 	unsigned long int *firstBit;
 
 	n = 1ul;
-	firstBit = (long unsigned int *)NULL;
+	firstBit = (unsigned long int *)NULL;
 	firstBit = &n;
 	return (*(int *)firstBit) /* type Punning */;
 }
